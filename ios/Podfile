@@ -10,6 +10,16 @@ target 'testMapBox' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  
+  pre_install do |installer|
+    $RNMBGL.pre_install(installer)
+  end
+
+  post_install do |installer|
+    $RNMBGL.post_install(installer)
+  end
+
+
   # Uncomment to opt-in to using Flipper
   #
   # if !ENV['CI']

@@ -3,9 +3,8 @@
     "name": "testMapBox",
     "slug": "testMapBox",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+    "assetBundlePatterns": ["**/*"],
+    "plugins": ["@react-native-mapbox-gl/maps"]
   },
   "name": "testMapBox"
 }
